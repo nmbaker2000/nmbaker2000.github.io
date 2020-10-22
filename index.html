@@ -1,7 +1,27 @@
-<!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+	<head>
+		<title> Button and Draw test </title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	
+	<body>
+		<button onclick="drawCircle()"> Circle </button>
+		<button onclick="drawSquare()"> Square </button>
+		<div class="dropdown">
+			<button onclick="clrMenu()" class="dropbtn"> Color </button>
+			<div id="colorDrop" class="dropdown-content">
+				<button onclick="blue()"> Blue </button>
+				<button onclick="red()"> Red </button>
+			</div>
+		</div>
+
+		<br>
+		<br>
+		<canvas id="physics" width="150" height="150"></canvas>
+		
+	</body>
+	
+	
+	<script src="physScripts.js"></script>
+
 </html>
